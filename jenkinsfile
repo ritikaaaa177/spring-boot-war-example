@@ -8,7 +8,8 @@ pipeline{
 
                 // mvn test
                 bat "mvn test"
-                echo "========executing test========"
+               // bat here becase windows batch command is used if used in linux the command would have been sh "mvn test"  , here sh implies shell
+               
             }
             
         }
@@ -17,7 +18,7 @@ pipeline{
             steps{
                 // mvn package
                 bat "mvn package"
-                echo "========executing build========"
+               
             }
             
         }
